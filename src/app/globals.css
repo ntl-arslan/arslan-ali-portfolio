@@ -1,42 +1,126 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
+/* Global Reset & Valorant Theme */
 body {
-  max-width: 100vw;
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+/* Accent Colors */
+:root {
+  --valorant-red: #ff4655;
+  --valorant-bg: #0f1923;
+  --valorant-dark: #1c1f26;
+  --valorant-gray: #9e9e9e;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
+/* Links */
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--valorant-red);
+  text-decoration: underline;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+/* Typewriter */
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* Fade Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+.fade-in-delay {
+  animation: fadeIn 1.4s ease-out;
+  animation-fill-mode: both;
+}
+
+/* Hero Glow Image */
+.hero-img-glow {
+  box-shadow: 0 0 20px rgba(255, 70, 85, 0.4);
+  transition: transform 0.3s ease;
+}
+.hero-img-glow:hover {
+  transform: scale(1.05);
+}
+
+/* Valorant Glow Buttons */
+.glow-button {
+  border: 2px solid var(--valorant-red);
+  background-color: transparent;
+  color: var(--valorant-red);
+  transition: all 0.3s ease;
+}
+.glow-button:hover {
+  background-color: var(--valorant-red);
+  color: #fff;
+  box-shadow: 0 0 12px var(--valorant-red);
+  transform: translateY(-2px);
+}
+
+/* Skill Card Styling */
+.skill-card {
+  background-color: var(--valorant-dark);
+  border: 1px solid #2a2e35;
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(255, 70, 85, 0.3);
+}
+
+/* Optional: Slanted background overlay (like Valorant’s design) */
+body::before {
+  content: '';
+  position: fixed;
+  top: -100px;
+  left: -200px;
+  width: 200%;
+  height: 300%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 70, 85, 0.02) 0%,
+    rgba(255, 70, 85, 0.03) 50%,
+    transparent 100%
+  );
+  transform: rotate(-10deg);
+  z-index: -1;
+  pointer-events: none;
 }

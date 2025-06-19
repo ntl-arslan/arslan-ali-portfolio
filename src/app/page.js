@@ -29,14 +29,18 @@ export default function Home() {
 					priority
 				/>
 				<h1 className="display-4 fw-bold">
-					<span className="typewriter">Hi, I'm Arslan 👋</span>
+					<span className="typewriter">Hi, I&apos;m Arslan 👋</span>
 				</h1>
 				<p className="lead text-secondary fade-in-delay">
 					A Full Stack Developer crafting modern, fast & elegant web experiences.
 				</p>
 				<div className="mt-4">
-					<a href="/projects" className="btn btn-primary btn-lg me-3 glow-button">View Projects</a>
-					<a href="/contact" className="btn btn-outline-light btn-lg glow-button">Contact Me</a>
+					<a href="/projects" className="btn btn-primary btn-lg me-3 glow-button">
+						View Projects
+					</a>
+					<a href="/contact" className="btn btn-outline-light btn-lg glow-button">
+						Contact Me
+					</a>
 				</div>
 			</div>
 
@@ -44,8 +48,8 @@ export default function Home() {
 			<div className="bg-dark bg-opacity-50 p-5 rounded shadow mb-5 animate-fade-in">
 				<h2>About Me</h2>
 				<p className="text-secondary fs-5">
-					I'm a self-driven developer with a deep interest in building scalable full-stack applications using 
-					<strong> React</strong>, <strong> Next.js</strong>, <strong> Node.js</strong>, and <strong> PostgreSQL</strong>. 
+					I&apos;m a self-driven developer with a deep interest in building scalable full-stack applications using
+					<strong> React</strong>, <strong> Next.js</strong>, <strong> Node.js</strong>, and <strong> PostgreSQL</strong>.
 					I enjoy solving complex problems and constantly learning new technologies.
 				</p>
 			</div>
@@ -76,35 +80,36 @@ export default function Home() {
 				<h2 className="mb-4">Experience</h2>
 				<ul className="list-group list-group-flush bg-transparent">
 					<li className="list-group-item bg-transparent text-secondary border-secondary">
-						<strong>Senior Software Engineer</strong>-- Nayatel<br />
+						<strong>Senior Software Engineer</strong> — Nayatel<br />
 						<small className="text-primary">Jan 2025 – Present</small><br />
 						<span>
 							Leading development of full-stack automation solutions for internal operations and customer portals.
 							Worked on complex API integrations, backend automation, and user dashboards using NestJS, PostgreSQL, and React.
 						</span>
 					</li>
+
 					<li className="list-group-item bg-transparent text-secondary border-secondary mt-3">
-						<strong>Software Engineer</strong>-- Nayatel<br />
+						<strong>Software Engineer</strong> — Nayatel<br />
 						<small className="text-primary">Feb 2024 – Jan 2025</small><br />
 						<span>
-  Managed and implemented Swagger for API documentation, ensuring clear and standardized API usage across teams.
-  Coordinated closely with QA engineers to streamline the testing process and enable smooth QA iterations for faster delivery and fewer bugs.
-</span>
+							Managed and implemented Swagger for API documentation to ensure consistent developer communication.
+							Collaborated closely with QA engineers to streamline test processes and reduce iteration cycles.
+						</span>
 					</li>
+
 					<li className="list-group-item bg-transparent text-secondary border-secondary mt-3">
-						<strong>Junior Software Engineer</strong> -- Nayatel<br />
-						<small className="text-primary">April 2023 – Feb 2024</small><br />
+						<strong>Junior Software Engineer</strong> — Nayatel<br />
+						<small className="text-primary">Apr 2023 – Feb 2024</small><br />
 						<span>
-							Assisted in building frontend components and learned the fundamentals of backend logic,
-							database relationships, and deployment workflows.
+							Assisted in building frontend components and explored backend development, including database relations and deployment processes.
 						</span>
 					</li>
 				</ul>
 			</div>
 
-			{/* CTA Section */}
+			{/* Call to Action */}
 			<div className="bg-primary bg-opacity-10 border border-primary p-5 rounded text-center mt-5 animate-fade-in">
-				<h3 className="text-light">Let’s build something amazing together.</h3>
+				<h3 className="text-light">Let&apos;s build something amazing together.</h3>
 				<p className="text-secondary">Open to freelance, part-time, and collaborative tech projects.</p>
 				<a href="/contact" className="btn btn-outline-light mt-3">Get in Touch</a>
 			</div>

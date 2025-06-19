@@ -12,7 +12,7 @@ export default function ContactPage() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(formData); // Replace with any API call or email service
+    console.log(formData); // Replace with your email or API integration
     setSubmitted(true);
   }
 
@@ -20,7 +20,7 @@ export default function ContactPage() {
     return (
       <div className="container py-5 text-center">
         <h2 className="text-light">Thank you, {formData.name}!</h2>
-        <p className="text-secondary">I'll get back to you soon.</p>
+        <p className="text-secondary">I&apos;ll get back to you soon.</p>
       </div>
     );
   }
